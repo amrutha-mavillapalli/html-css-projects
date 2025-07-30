@@ -1,0 +1,55 @@
+.error{
+    color: red;
+}
+p.success{
+    color: green;
+}
+p.success.feedback{
+    color:chocolate;
+    border: 1px dashed green;
+}
+
+/* descendant selector - matches all elements that are descendants of a specified element 
+1. paragraph inside div with error class is highlighted with rebeccapurple
+2. and all paragraphs inside div is highlighted with yellow */
+div .error{    
+    background-color: rebeccapurple;
+}
+div p{
+    background-color: yellow;
+}
+/* CSS [attribute] Selector
+The [attribute] selector is used to select elements with a specified attribute.*/
+a[href]{
+background-color:gold;
+}
+
+/* CSS [attribute="value"] Selector:
+The [attribute="value"] selector is used to select elements with a specified attribute and value */
+
+a[href = 'https://web.whatsapp.com/']{
+background-color:#0a4d21cb;
+color: white;
+text-decoration: none;
+font-weight: bold;
+text-transform: uppercase;
+}
+/* *= is used to style uncut tag which specified value is included somewhere in the link */
+
+a[href*="google"]{
+background-color:#c75f10cb;
+color: white;
+text-decoration: none;
+font-weight: bold;
+text-transform: uppercase;
+}
+
+/* $= is used to style uncut tag which specified value is included end in the link */
+a[href$="language/"]{
+background-color:#08bce5cb;
+color: white;
+text-decoration: none;
+font-weight: bold;
+text-transform: uppercase;
+}
+

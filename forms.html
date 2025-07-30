@@ -1,0 +1,59 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <title>HTML Forms</title>
+    </head>
+    <body>
+        <h1>HTML Forms</h1>
+        <!-- Here the for attribute in label tag (username) is linked with the id attribute in the input tag (username) -->
+        <!--The action attribute specifies where to send the form-data when a form is submitted-->
+        <!---< form action="/action_page.php" method="get"> -->
+        <form>  
+            <label for="username">Enter Username:</label>
+            <input type="text" id="username" placeholder="username" required>
+            <br> <br>
+            <label for="email">Enter Email:</label>
+            <input type="email" id="email" placeholder="email" required>
+            <br> <br>
+            <label for="password">Enter Password:</label>
+            <input type="password" id="password" placeholder="password" required>
+            <br> <br>
+            
+            <!-- radio button in the form-->
+            <p>Please select your age:</p>
+            <!-- name attribute same so it will select only one option from the following-->
+            <input type="radio" name="age" value="0-25" id="Option-1">
+            <label for="Option-1">0-25</label>
+            <input type="radio" name="age" value="25-50" id="Option-2">
+            <label for="Option-2">25-50</label>
+            <input type="radio" name="age" value="51+" id="Option-3">
+            <label for="Option-3">51+</label>
+            <br><br>
+
+            <!-- Dropdown select in the form-->
+            <label for="question">Security Question:</label>
+            <select name="question" id="question">
+                <option value="q1">What is your favourite food?</option>
+                <option value="q2">What is most recent place you visited?</option>
+                <option value="q3">Do you have pet?</option>
+                <option value="q4">What is your favourite colour?</option>
+            </select>
+            <br><br>
+
+
+            <label for="answer">Security Answer:</label>
+            <input type="text" id="answer" name="answer" required>  <!-- required states that user input must have some data it should not be empty-->
+            <br><br>
+
+            <!-- <textarea> tag and placeholder attribute-->
+            <!-- placeholder attribute will show small hint that describes the expeced value in textarea-->
+            <label for="bio">Your Bio:</label> <br>
+            <textarea name="bio" id="bio" cols="30" rows="10" placeholder="your bio"></textarea>
+            <br><br>
+            
+            <!-- submit button-->
+            <input type="submit" value="SUBMIT">
+
+        </form> 
+    </body>
+</html>

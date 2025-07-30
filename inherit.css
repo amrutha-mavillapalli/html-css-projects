@@ -1,0 +1,20 @@
+div
+{
+    color: lightcoral;
+    border: 1px solid grey;
+    margin: 40px;
+    font-weight: bold;
+}
+/* inherit - The inherit keyword specifies that a property should inherit its value from its parent element.
+             The inherit keyword can be used for any CSS property, and on any HTML element.*/
+
+/* div p defines that these styles should be applied to the paragraphs inside div */
+div p{
+    
+    border: inherit;  /* border style is inherited from div styles*/
+    margin: inherit;
+    color: crimson;
+}
+p{
+    color: orange;
+}
