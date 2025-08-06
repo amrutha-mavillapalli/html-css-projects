@@ -1,0 +1,94 @@
+<!DOCTYPE>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="form.css">
+    <title>Form</title>
+</head>
+
+<body>
+    <h1>Survey Form</h1>
+    <form id="form">
+        <div class="form_details">
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+        </div>
+        <div class="form_details">
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+        </div>
+        <div class="form_details">
+            <label for="age">Age:</label>
+            <input type="number" id="age" placeholder="Enter your age" required>
+        </div>
+        <div class="form_details">
+            <label for="question">Which option describes you best?</label>
+            <select name="question" id="question">
+                <option value="q1">Student</option>
+                <option value="q2">Intern</option>
+                <option value="q3">Professional</option>
+                <option value="q4">Others</option>
+            </select>
+        </div>
+        <div class="form_details">
+            <p>Would you recommend our services to your friend?</p>
+            <div class="input-container">
+                <input type="radio" name="recommend" id="Option-1">
+                <label for="Option-1">Yes</label>
+            </div>
+            <div class="input-container">
+                <input type="radio" name="recommend" id="Option-2">
+                <label for="Option-2">No</label>
+            </div>
+            <div class="input-container">
+                <input type="radio" name="recommend" id="Option-3">
+                <label for="Option-3">Maybe</label>
+            </div>
+
+        </div>
+        <div class="form_details">
+            <label for="question">Languages and frameworks you known</label>
+            <small>(check all that apply)</small>
+            <div class="input-container">
+                <input type="checkbox" name="Language" id="Option-1">
+                <label for="Option-1">C++</label>
+            </div>
+            <div class="input-container">
+                <input type="checkbox" name="Language" id="Option-2">
+                <label for="Option-2">Java</label>
+            </div>
+            <div class="input-container">
+                <input type="checkbox" name="Language" id="Option-3">
+                <label for="Option-3">Python </label>
+            </div>
+            <div class="input-container">
+                <input type="checkbox" name="Language" id="Option-4">
+                <label for="Option-4">C </label>
+            </div>
+            <div class="input-container">
+                <input type="checkbox" name="Language" id="Option-5">
+                <label for="Option-5">C#</label>
+            </div>
+            <div class="input-container">
+                <input type="checkbox" name="Language" id="Option-6">
+                <label for="Option-6">React</label>
+            </div>
+            <div class="input-container">
+                <input type="checkbox" name="Language" id="Option-7">
+                <label for="Option-7">Javasccript</label>
+            </div>
+
+        </div>
+        <div class="form_details">
+            <label for="Comment">Any Comments or Suggestions</label>
+            <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Enter Your comments Here"></textarea>
+
+        </div>
+        <!-- submit button-->
+        <button type="submit" value="submit">Submit</button>
+
+    </form>
+</body>
+
+</html>
